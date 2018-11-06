@@ -11,10 +11,12 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class AnnonceController extends AbstractController
 {
     /**
-     * @Route("/", name="annonce")
+     * @Route("/annonce", name="annonce_liste")
      */
-    public function index()
+    public function listeAnnonces(AnnonceRepository $repo)
     {
+        $annonce=$repo->findAll();
+
         return $this->render('annonce/index.html.twig', [
             'controller_name' => 'AnnonceController',
         ]);
