@@ -26,7 +26,7 @@ class AnnonceFixtures extends Fixture
                 $annonce->setCreatedAt(new \DateTime())
                         ->setTitle($faker->sentence($nbWords = 3, $variableNbWords = true))
                         ->setDesignation($faker->sentence($nbWords = 3, $variableNbWords = true))
-                        ->setPrix(mt_rand(10,140))
+                        ->setPrix(mt_rand(10,50000))
                         ->setImage($faker->imageUrl($width = 300, $height = 200))
                         ->setCategorie($categorie);
                         $manager->persist($annonce);

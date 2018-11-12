@@ -38,10 +38,9 @@ class AnnonceController extends AbstractController
             //$annonce->setCreatedAt(new \DateTime());
             $manager->persist($annonce);
             $manager->flush();
-            $this->addFlash('sucess', "L'annonce {$annonce->getTitle()} a bien été enregistré");
+            $this->addFlash('sucess', "L'annonce ".$annonce->getTitle()." a bien été enregistré");
             return $this->redirectToRoute('annonce_liste');
         }
-
         return $this->render('annonce/addAnnonce.html.twig',[
             'formAjout' => $form->createView()
         ]);

@@ -1,9 +1,14 @@
+{% form_theme formAjout 'bootstrap_4_layout.html.twig' %}
 {% extends 'base.html.twig' %}
 
 {% block body %}
-
-    {{form_start('formAjout')}}
-    {{form_widget('formAjout')}}
-    {{form_end('formAjout')}}
-
+<div class="container">
+    <h1>Ajouter une annonce</h1>
+        {{form_start(formAjout)}}
+        <div class="form-group">
+            {{form_widget(formAjout)}}
+        </div>
+        <button type="submit" class="btn btn-primary">Créer l'annonce</button>
+    {{form_end(formAjout)}}
+</div>
 {% endblock %}
