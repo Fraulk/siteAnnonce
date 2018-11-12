@@ -37,7 +37,7 @@ class Annonce
     private $prix;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\categorie", inversedBy="annonces")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Categorie", inversedBy="annonces")
      * @ORM\JoinColumn(nullable=false)
      */
     private $categorie;
