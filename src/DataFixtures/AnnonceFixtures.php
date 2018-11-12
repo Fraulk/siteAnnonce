@@ -17,7 +17,7 @@ class AnnonceFixtures extends Fixture
         //création des categorieg
         for ($i=0; $i <= 3; $i++) { 
             $categorie=new Categorie();
-            $categorie->setLibelle($faker->sentence($nbWords = 4, $variableNbWords = true));
+            $categorie->setLibelle($faker->word());
             $manager->persist($categorie);
 
             //creatione des annonce

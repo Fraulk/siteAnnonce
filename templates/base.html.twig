@@ -17,10 +17,10 @@
   <div class="collapse navbar-collapse" id="navbarColor01">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Accueuil <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="annonces/">Accueil <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="annonces/">Annonce</a>
+        <a class="nav-link" href="{{path('ajouter_annonce')}}">Ajouter une Annonce</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Vide</a>
@@ -37,10 +37,11 @@
 </nav>
     </header>
     <body>
-    <h1>Bienvenue sur mon site d'annonce</h1>
-        <p>Elit aute nulla velit ullamco exercitation irure enim velit. Velit incididunt ipsum nisi aliqua ut do dolore sunt cupidatat voluptate sit consequat. Anim dolor consequat eiusmod consequat do officia duis. Voluptate id duis adipisicing occaecat ullamco occaecat elit veniam irure tempor excepteur consequat fugiat. Aliqua anim proident dolor et. Cillum qui est tempor quis qui velit officia.
-        </p>
         {% block body %}
+          <h1>Bienvenue sur mon site d'annonce</h1>
+          <p>Elit aute nulla velit ullamco exercitation irure enim velit. Velit incididunt ipsum nisi aliqua ut do dolore sunt cupidatat voluptate sit consequat. Anim dolor consequat eiusmod consequat do officia duis. Voluptate id duis adipisicing occaecat ullamco occaecat elit veniam irure tempor excepteur consequat fugiat. Aliqua anim proident dolor et. Cillum qui est tempor quis qui velit officia.
+          </p>
+        
 
         {% endblock %}
 </body>
